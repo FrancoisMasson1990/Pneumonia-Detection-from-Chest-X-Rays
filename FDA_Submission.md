@@ -206,6 +206,7 @@ predicts positive, it is correct with 26.8% probability.
 Out of all negative cases the model correctly classifies 44.1%,
 out of all positive cases it correctly classifies 81.8%.
 
+In the presence of Infiltration disease, the algorithm works poorly because it is not able to differentiate between Pneumonia and infiltration.
 
 
 ### 4. Databases
