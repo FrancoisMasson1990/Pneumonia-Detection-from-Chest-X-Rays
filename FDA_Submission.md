@@ -1,10 +1,10 @@
 # FDA  Submission
 
 **Your Name:**
-Gennady Lungu
+Francois Masson
 
 **Name of your Device:**
-X-Ray Pneumonia Detection Assistant (XR-PDA)
+X-Ray Pneumonia Detector III
 
 ## Algorithm Description 
 
