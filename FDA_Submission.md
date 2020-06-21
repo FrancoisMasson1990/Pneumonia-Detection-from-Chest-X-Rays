@@ -28,6 +28,8 @@ X-Ray image properties:
 * Modality: DX (Digital Radiography) 
  
 
+
+
 **Device Limitations:**
 
 The model is recommended for use without following comorbid thoracic pathologies:
@@ -208,6 +210,16 @@ out of all positive cases it correctly classifies 81.8%.
 
 In the presence of Infiltration disease, the algorithm works poorly because it is not able to differentiate between Pneumonia and infiltration.
 
+***In summary :***
+
+The algorithm performs with the following score :
+- Max F1 score: 0.404. Outperform the radiologist and remember that F1 is test's accuracy the algorithm 
+- threshold: 0.377, 
+- precision: 0.268, 
+- recall: 0.818
+
+The recall is very high which is great because few False Negative won t be detected. And precision is low so the opposite (more False Positive) But in the case of AI Healthcare domain it is better to say people are infected even if it is not than the opposite
+
 
 ### 4. Databases
 
@@ -260,9 +272,13 @@ on the labeling process can be found [here](https://arxiv.org/abs/1705.02315).
 
 **Patient Population Description for FDA Validation Dataset:**
 
-The following population subset is to be used for the FDA Validation Dataset:
+***Ideal Dataset:***
+
+The ideal dataset would include Chest X-Rays of patient with Pneumonia but with an unbiased distribution with the following coromorbid diseases (Consolidation, Edema, Effusion, Hernia). It will cover 50-50 Male/female and people mainly above 50 years old. No discrimination regarding the race. 
+
+And the following population subset is to be used for the FDA Validation Dataset:
 * Both men and women 
-* Age 2 to 90 
+* Age 50 to 90 
 * Without known comorbid thoracic pathologies listed above
 
 **Ground Truth Acquisition Methodology:**
